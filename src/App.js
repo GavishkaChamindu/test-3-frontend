@@ -5,16 +5,15 @@ import HeaderPage from "./HeaderPage/HeaderPage";
 import HomePage from "./pages/HomePage/HomePage";
 import Navbar from "./component/Navbar/Navbar";
 import Question from "./pages/question/Question";
+import Show from "./pr-3/ShowPages/Show";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <HeaderPage />
-      <HomePage />
-      <Question />
-      <Banner />
-      <Footer />
+<Show/>
+    
+     
     </div>
   );
 }
