@@ -1,0 +1,157 @@
+body{
+    background-color: #F0F2F5;
+}.show-home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-show-content{
+    display:  flex;
+    flex-direction: column;
+  background-color: white;
+
+
+}
+
+.new-show-up{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.authorName-image{
+    display: flex;
+}
+
+.image-border-set{
+    padding: 10px;
+    display: flex;
+}
+
+.profile-image{
+    border: 1px solid blue ;
+    padding: 1px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.author-name{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.post-date-time{
+    font-size: 14px;
+    color: #babbbd;
+}
+
+
+
+
+
+
+
+.new-show-down{
+    display: flex;
+   
+ 
+}
+
+.down-icon{
+    font-size: 34px;
+   
+    color: #babbbd;
+}
+.new-show-down{
+
+}
+
+.like-left{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Add this to your CSS file */
+
+.new-show-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.like-left,
+.comment-center,
+.share-right {
+    flex-basis: 30%; /* Adjust the width as needed */
+    text-align: center;
+    cursor: pointer;
+    padding: 3px;
+    
+    /* Add borders for visual separation */
+}
+
+
+
+.like-left:hover,
+.comment-center:hover,
+.share-right:hover {
+
+   background-color: #f7f4f4;
+    
+}
+
+.edit-span.clicked {
+    color: rgb(28, 28, 228);  
+}
+
+.liked .down-icon {
+    color: blue; /* Change the color of the icon to blue when the "liked" class is applied */
+  }
+  
+  .liked .edit-span {
+    color: blue; /* Change the color of the text to blue when the "liked" class is applied */
+  }
+
+
+
+
+
+
+
+
+
+
+
+.edit-span{
+    color: #6e6e6f;
+}
+
+@media screen and (max-width: 768px) {
+    .like-left,
+    .comment-center,
+    .share-right {
+        flex-basis: 100%;
+        margin-top: 10px; /* Add spacing between columns on small screens */
+    }
+}
+
+
+
+
+
+
+
+

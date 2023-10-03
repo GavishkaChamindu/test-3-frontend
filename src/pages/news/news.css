@@ -1,0 +1,27 @@
+/* Add this to your CSS file */
+
+.news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.news-left{
+    flex: 3;
+    background-color: aqua;
+}
+.news-center{
+    flex: 5;
+    
+}
+.news-right {
+    background-color: blue;
+    flex: 3;
+}
+
+@media screen and (max-width: 768px) {
+    .news-left,
+    .news-right {
+        display: none;
+    }
+}

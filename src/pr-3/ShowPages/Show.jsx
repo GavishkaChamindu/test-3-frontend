@@ -1,22 +1,40 @@
+import "./show.css";
 import React from "react";
 
-export default function Show() {
+const YourComponent = () => {
   return (
-    <div className="card" aria-hidden="true">
-      <img src="" className="card-img-top" alt="..." />
-      <div className="card-body">
-        <h5 className="card-title placeholder-glow">
-          <span className="placeholder col-6"></span>
-        </h5>
-        <p className="card-text placeholder-glow">
-          <span className="placeholder col-7">hi adadad</span>
-          <span className="placeholder col-4"></span>
-          <span className="placeholder col-4"></span>
-          <span className="placeholder col-6"></span>
-          <span className="placeholder col-8"></span>
-        </p>
-        <a className="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+    <div className="container">
+      <div className="show-contains">
+        <div className="show-up">
+          up contains
+          <div class="container-fluid">
+            <div className="up-c">
+              <div className="pr-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREdHtP2TCccokEERA5PlgbB-zLk6rSNCgGun-2BkCeEg&s"
+                  alt=""
+                  className="profile-image"
+                />
+              </div>
+
+              <div className="author-name"></div>
+              <div className="show-title"></div>
+            </div>
+          </div>
+        </div>
+        <div className="show-center">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREdHtP2TCccokEERA5PlgbB-zLk6rSNCgGun-2BkCeEg&s"
+            alt=""
+          />
+          image and other
+        </div>
+        <div className="edit-delete-comment">edit delete comment </div>
+        <div className="show-comment"></div>
+        <div className="write-comment"></div>
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default YourComponent;
