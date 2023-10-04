@@ -1,4 +1,5 @@
 import "./profile.css";
+import React, { useEffect, useState } from "react";
 import { FcNews } from "react-icons/fc";
 
 import {
@@ -9,6 +10,22 @@ import {
 } from "react-icons/fc";
 
 export default function Profile() {
+const [data,setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("http://localhost:8000/api/posts");
+      const result = await response.json();
+      setData(result);
+    };
+
+    fetchData();
+  }, []);
+
+
+
+
+  
   return (
     <div className="profile">
       <div className="profile-up">

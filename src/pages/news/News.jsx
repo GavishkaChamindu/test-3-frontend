@@ -1,4 +1,5 @@
 import "./news.css";
+import Contact from "../contacts/Contact";
 import NewHome from "../../pr-3/ShowPages/NewHome";
 import Profile from "../profilePage/Profile";
 
@@ -10,7 +11,7 @@ export default function News() {
         <div className="news-center"> 
         <NewHome></NewHome>
         </div>
-        <div className="news-right">right </div>
+        <div className="news-right"><Contact/> </div>
       
     </div>
   )

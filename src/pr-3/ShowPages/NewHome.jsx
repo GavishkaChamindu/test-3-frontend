@@ -1,9 +1,43 @@
 import "./newhome.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineDelete } from "react-icons/ai";
 import { BiComment, BiLike } from "react-icons/bi";
 
 export default function NewHome() {
+
+const [data,setData] = useState([]);
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const response = await fetch("http://localhost:8000/api/posts");
+      if (response.ok) {
+        const result = await response.json();
+        setData(result);
+      } else {
+        console.error("Failed to fetch data");
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  fetchData();
+}, []);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   const [isLiked, setIsLiked] = useState(false);
 
   // Function to handle the "Like" button click
@@ -18,8 +52,23 @@ export default function NewHome() {
   
   return (
     <div className="show-home-container">
-      <div className="new-show-content">
-        <div className="new-show-up">
+
+
+hi
+      
+
+
+{data.map((item) => (
+
+
+
+
+
+
+
+      
+<div key={item.id} className="new-show-content">
+<div className="new-show-up">
           <div className="authorName-image">
             <div className="author-image">
               <div class="container-fluid">
@@ -31,8 +80,9 @@ export default function NewHome() {
                   />
 
                   <div className="author-name">
-                    Gavishka
-                    <div className="post-date-time">2023.4.05</div>
+                  {item.author_name}
+                    
+                    <div className="post-date-time">{item.created_at}</div>
                   </div>
                 </div>
               </div>
@@ -41,13 +91,20 @@ export default function NewHome() {
           </div>
 
           <div className="post-content">
-            <div class="container-fluid">Travelling life and enjoy</div>
+            <div class="container-fluid">{item.content}</div>
           </div>
         </div>
 
         <div className="new-show-center">
+
+
+          
           <img
-            src="https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg?auto=compress&cs=tinysrgb&w=600"
+
+
+
+
+            src={"http://localhost:8000/"+item.image}
             class="img-fluid"
             alt="..."
           />
@@ -97,6 +154,10 @@ export default function NewHome() {
         <br />
         <br />
       </div>
+
+
+      ))}
+      
     </div>
   );
 }
