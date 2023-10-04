@@ -8,14 +8,14 @@
 
 .news-left{
     flex: 3;
-    background-color: aqua;
+  
 }
 .news-center{
     flex: 5;
     
 }
 .news-right {
-    background-color: blue;
+  
     flex: 3;
 }
 

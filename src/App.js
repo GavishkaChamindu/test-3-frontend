@@ -14,7 +14,7 @@ function App() {
   
 
   
-     <News/>
+  <News/>
     </div>
   );
 }
