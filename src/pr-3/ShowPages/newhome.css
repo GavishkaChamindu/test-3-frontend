@@ -82,7 +82,7 @@ body{
 
 
 
-/* Add this to your CSS file */
+
 
 .new-show-down {
     display: flex;
@@ -95,12 +95,12 @@ body{
 .like-left,
 .comment-center,
 .share-right {
-    flex-basis: 30%; /* Adjust the width as needed */
+    flex-basis: 30%; 
     text-align: center;
     cursor: pointer;
     padding: 3px;
     
-    /* Add borders for visual separation */
+   
 }
 
 
@@ -118,11 +118,11 @@ body{
 }
 
 .liked .down-icon {
-    color: blue; /* Change the color of the icon to blue when the "liked" class is applied */
+    color: blue; 
   }
   
   .liked .edit-span {
-    color: blue; /* Change the color of the text to blue when the "liked" class is applied */
+    color: blue; 
   }
 
 
@@ -144,7 +144,7 @@ body{
     .comment-center,
     .share-right {
         flex-basis: 100%;
-        margin-top: 10px; /* Add spacing between columns on small screens */
+        margin-top: 10px; 
     }
 }
 

@@ -1,13 +1,9 @@
-/* YourComponent.css */
-
-
 .container {
     display: flex;
    
     justify-content: center;
     margin-right: 100px;
     margin-left: 100px;
-/* Ensure the container takes at least the full viewport height */
   }
 .show-contains{
     display: flex;

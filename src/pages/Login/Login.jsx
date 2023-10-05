@@ -2,6 +2,9 @@ import "./login.css";
 
 export default function Login() {
   return (
+
+    <div class="container-fluid">
+
     <div className="login">
 
         <div className="set-padding">
@@ -45,6 +48,7 @@ export default function Login() {
         </div>
       </div>
       </div>
+    </div>
     </div>
   );
 }
