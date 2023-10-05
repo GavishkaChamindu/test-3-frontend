@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import NewHome from "./pr-3/ShowPages/NewHome";
 import News from "./pages/news/News";
 import Question from "./pages/question/Question";
+import Register from "./pages/Register/Register";
 import Show from "./pr-3/ShowPages/Show";
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
     <div>
   
 
-  
-  <News/>
+  <Register/>
+
     </div>
   );
 }
