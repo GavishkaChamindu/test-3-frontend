@@ -1,5 +1,6 @@
 import "./App.css";
 import Banner from "./pages/banner/Banner";
+import CreatePost from "./pages/createPost/CreatePost";
 import Footer from "./component/footer/Footer";
 import HeaderPage from "./HeaderPage/HeaderPage";
 import HomePage from "./pages/HomePage/HomePage";
@@ -13,8 +14,8 @@ function App() {
     <div>
   
 
-  
-  <News/>
+  <CreatePost/>
+ 
     </div>
   );
 }

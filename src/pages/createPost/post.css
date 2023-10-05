@@ -1,0 +1,26 @@
+  
+.post-profile-image-content{
+    display: flex;
+}
+
+.author-name-set{
+    display: flex;
+    flex-direction: column;
+}
+ 
+
+  .pro,.profile-image-border{
+   
+    border: 1px;
+   
+  }
+
+  .pro{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+  }
+
+  .public{
+    font-weight: bold;
+  }
