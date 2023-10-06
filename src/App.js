@@ -12,7 +12,7 @@ import Show from "./pr-3/ShowPages/Show";
 function App() {
   return (
     <div>
-  
+  <News/>
 
   <CreatePost/>
  

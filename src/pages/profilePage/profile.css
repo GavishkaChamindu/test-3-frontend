@@ -25,4 +25,9 @@ top: 0;
     font-size: 14px;
     color: black;
     font-weight: bold;
+    cursor: pointer;
+}
+.icon-title-name:hover{
+   
+   color: rgb(12, 153, 223);
 }

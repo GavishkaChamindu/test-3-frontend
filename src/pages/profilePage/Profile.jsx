@@ -1,6 +1,9 @@
 import "./profile.css";
+import CreatePost from "../createPost/CreatePost";
 import React, { useEffect, useState } from "react";
 import { FcNews } from "react-icons/fc";
+
+//import CreatePost from "./createPost/CreatePost";
 
 import {
   FcAddImage,
@@ -10,6 +13,11 @@ import {
 } from "react-icons/fc";
 
 export default function Profile() {
+  const [isCreatePostOpen, setCreatePostOpen] = useState(false);
+
+
+
+
 const [data,setData] = useState([]);
 
   useEffect(() => {
@@ -27,6 +35,82 @@ const [data,setData] = useState([]);
 
   
   return (
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div className="profile">
       <div className="profile-up">
         <div className="profile-image-name">
@@ -46,8 +130,48 @@ const [data,setData] = useState([]);
           <div class="container-fluid">
             <div className="post-icon">
               <FcAddImage className="profile-icons" />{" "}
-              <span className="icon-title-name">Create Post</span>
+              <span className="icon-title-name"
+              
+              style={{
+                fontSize: "14px",
+                color: "black",
+                fontWeight: "bold",
+                cursor: "pointer",
+
+
+
+                
+              }}
+
+
+
+
+
+
+
+        data-bs-target="#exampleModalToggle"
+        data-bs-toggle="modal"
+              
+              
+              >
+           Create Post
+           </span>
             </div>
+
+
+
+
+
+
+           
+
+
+
+
+
+
+
+
           </div>
         </div>
         <div className="profile-create-post">

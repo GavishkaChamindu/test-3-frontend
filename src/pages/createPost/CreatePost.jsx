@@ -170,13 +170,7 @@ export default function CreatePost() {
           </div>
         </div>
       </div>
-      <button
-        class="btn btn-primary"
-        data-bs-target="#exampleModalToggle"
-        data-bs-toggle="modal"
-      >
-        button
-      </button>
+     
     </div>
   );
 }

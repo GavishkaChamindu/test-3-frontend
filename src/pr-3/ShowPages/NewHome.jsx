@@ -40,9 +40,7 @@ useEffect(() => {
   
   const [isLiked, setIsLiked] = useState(false);
 
-  // Function to handle the "Like" button click
   const handleLikeClick = () => {
-    // Toggle the liked state
     setIsLiked(!isLiked);
   };
 

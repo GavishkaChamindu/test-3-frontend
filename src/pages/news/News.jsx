@@ -9,7 +9,7 @@ export default function News() {
         
         <div className="news-left"><Profile/></div>
         <div className="news-center"> 
-        <NewHome></NewHome>
+        <NewHome/>
         </div>
         <div className="news-right"><Contact/> </div>
       
